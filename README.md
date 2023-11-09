@@ -8,26 +8,26 @@ In this Assignment, we have execute commands using fork()/exec() as well as thre
 
 ## **Assumptions:**  
 
-There are only two flags which are implemented per command.  
-The flags must be specified immediately after the command, e.g., ‘rm -i filename’ is legal however ‘rm filename -i’ is not legal.  
-Home directory is ‘/home/js’ .  
-Printing files in column format along with their file numbers (arbitrary) is allowed.  
-Special character interpretation of strings in echo is disabled.  
-There are no flags for pwd.  
-Blank spaces ‘ ‘ are treated as arguments to provide protection and accuracy, therefore output may change if many unnecessary blank spaces are provided.  
-Two flags cannot be used simultaneously.  
- ‘ls’ does not print out directories. ‘ls -a’ can be used to view all files including directories.  
- Everything after ‘date’ in the date command can be treated as a flag.  
- Using unnecessary special characters is not allowed. Also putting forward slashes at the end of a command is not allowed, i.e. like, dir/file/, rather dir/file .  
+1. There are only two flags which are implemented per command.  
+2. The flags must be specified immediately after the command, e.g., ‘rm -i filename’ is legal however ‘rm filename -i’ is not legal.  
+3. Home directory is ‘/home/js’ .  
+4. Printing files in column format along with their file numbers (arbitrary) is allowed.  
+5. Special character interpretation of strings in echo is disabled.  
+6. There are no flags for pwd.  
+7. Blank spaces ‘ ‘ are treated as arguments to provide protection and accuracy, therefore output may change if many unnecessary blank spaces are provided.  
+8. Two flags cannot be used simultaneously.
+9. ‘ls’ does not print out directories. ‘ls -a’ can be used to view all files including directories.
+10. Everything after ‘date’ in the date command can be treated as a flag.
+11. Using unnecessary special characters is not allowed. Also putting forward slashes at the end of a command is not allowed, i.e. like, dir/file/, rather dir/file .  
 
 In general, an instruction will look like the following:  
-<command/command&t> [-flag] [arguments]  
+**<command/command&t> [-flag] [arguments]**  
 
-Note: In order to display that the file is being called through thread/fork, I have printed statements that indicate how the program is being executed before the execution of the program begins.  
+**Note:** In order to display that the file is being called through thread/fork, I have printed statements that indicate how the program is being executed before the execution of the program begins.  
 
-Note: The file path must be respecified in the ‘shell.c’ file in order for exec() and system() to enable execution of the command file.  
+**Note:** The file path must be respecified in the ‘shell.c’ file in order for exec() and system() to enable execution of the command file.  
 
-Note: Commands can handle multiple arguments however care must be taken to not exceed the malloced memory (around 100).  
+**Note:** Commands can handle multiple arguments however care must be taken to not exceed the malloced memory (around 100).  
 
 
 
