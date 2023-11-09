@@ -1,5 +1,6 @@
 # Linux-Shell
-
+Report with screeenshots of outputs is present (LinuxShell_Report.pdf).  
+This shell was implemented on [Artix Linux](https://artixlinux.org/).
 
 ## **System Description:**
 
